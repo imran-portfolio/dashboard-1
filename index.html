@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Student</title> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+<div class="page_wrapper">
+ 
+  <header class="header">
+  	<div class="row">
+    	<div class="col-md-3 col-6 logo">
+        	<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+    	<div class="col-md-4 header_search">
+        	<div class="search_field">
+            	<input type="text" class="form-control" value="Search...">
+                <img class="searchIcon" src="images/search-icon.svg">
+            </div>
+        </div>
+    	<div class="col-md-3 header_filter">
+        	<div class="selectOuter">
+            	<select class="form-select">
+                	<option>Option 1</option>
+                	<option>Option 2</option>
+                </select>
+            </div>
+        </div>
+        
+    	<div class="col-md-2 col-6 user_access">  
+            <div class="header_user">
+            <ul> 
+            	<li class="nav-item dropdown item-notify">
+                    <a href="#" class="nav-link dropdown-toggle icon" id="notifyDD" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/bell-icon.png" alt=""></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notifyDD">
+                        <div class="notifications" id="box">
+                            <h2>Notifications - <span>2</span></h2>
+                            <div class="notifications-item"> <img src="images/profile-image.png" alt="img">
+                                <div class="text">
+                                    <h4>Samso aliao</h4>
+                                    <p>Samso Nagaro Like your home work</p>
+                                </div>
+                            </div>
+                            <div class="notifications-item"> <img src="images/profile-image.png" alt="img">
+                                <div class="text">
+                                    <h4>John Silvester</h4>
+                                    <p>+20 vista badge earned</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                
+                <li class="nav-item dropdown item-user">
+                    <div class="dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" id="userDD" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/profile-image.png" alt="img"></a>
+                  <ul class="dropdown-menu" aria-labelledby="userDD">
+                    <li><a href="#" class="dropdown-item">Reports</a></li>
+                    <li><a href="#" class="dropdown-item">Settings</a></li>
+                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                  </ul>
+                </div>
+                </li>
+                
+                
+
+
+            </ul>
+            </div>
+        </div>
+        
+        
+    </div>
+  </header>
+ 
+ <div class="main_container">
+ 	<div class="page_sidebar">
+    <button class="btn btn-primary btn-lg">Main Menu</button>
+    <div class="sb_section sb_menu">
+    	<ul class="sidebar_menu">
+        	<li class="active">
+            <a href="index.html">
+            <svg viewBox="0 0 16 20">
+			<path d="M7.9358 11.2135C7.01066 11.2146 6.11374 10.895 5.39778 10.3091C4.68182 9.72317 4.19108 8.90721 4.00914 8.00014C3.99463 7.90459 4.00108 7.80703 4.02802 7.71422C4.05497 7.62141 4.10177 7.53557 4.16518 7.46264C4.2286 7.38971 4.30711 7.33145 4.39528 7.29187C4.48345 7.2523 4.57917 7.23237 4.6758 7.23347C4.83462 7.23116 4.98905 7.28563 5.11127 7.38708C5.2335 7.48852 5.31548 7.63027 5.34247 7.7868C5.46802 8.38608 5.79598 8.9239 6.27126 9.30992C6.74654 9.69594 7.34018 9.90665 7.95247 9.90665C8.56476 9.90665 9.1584 9.69594 9.63368 9.30992C10.109 8.9239 10.4369 8.38608 10.5625 7.7868C10.5895 7.63027 10.6714 7.48852 10.7937 7.38708C10.9159 7.28563 11.0703 7.23116 11.2291 7.23347C11.3258 7.23237 11.4215 7.2523 11.5097 7.29187C11.5978 7.33145 11.6763 7.38971 11.7398 7.46264C11.8032 7.53557 11.85 7.62141 11.8769 7.71422C11.9039 7.80703 11.9103 7.90459 11.8958 8.00014C11.7128 8.91285 11.2171 9.73315 10.4943 10.3197C9.77144 10.9063 8.86665 11.2223 7.9358 11.2135Z"/>
+			<path d="M13.8692 19.9998H2.0025C1.73123 20.0002 1.46272 19.9453 1.21331 19.8386C0.963904 19.7319 0.73881 19.5756 0.551724 19.3791C0.364638 19.1827 0.219471 18.9503 0.125052 18.6959C0.0306335 18.4416 -0.0110622 18.1708 0.00250175 17.8998L0.542502 6.4065C0.564851 5.89123 0.785391 5.40451 1.15807 5.04799C1.53075 4.69146 2.02675 4.49268 2.5425 4.49316H13.3292C13.8449 4.49268 14.3409 4.69146 14.7136 5.04799C15.0863 5.40451 15.3068 5.89123 15.3292 6.4065L15.8692 17.8998C15.8827 18.1708 15.841 18.4416 15.7466 18.6959C15.6522 18.9503 15.507 19.1827 15.3199 19.3791C15.1329 19.5756 14.9078 19.7319 14.6584 19.8386C14.409 19.9453 14.1404 20.0002 13.8692 19.9998ZM2.5425 5.83317C2.36569 5.83317 2.19612 5.9034 2.0711 6.02843C1.94607 6.15345 1.87583 6.32302 1.87583 6.49983L1.33584 17.9665C1.33131 18.0568 1.34521 18.1471 1.37669 18.2319C1.40816 18.3166 1.45655 18.3941 1.51891 18.4596C1.58127 18.5251 1.6563 18.5772 1.73944 18.6128C1.82257 18.6483 1.91208 18.6666 2.0025 18.6665H13.8692C13.9596 18.6666 14.0491 18.6483 14.1322 18.6128C14.2154 18.5772 14.2904 18.5251 14.3528 18.4596C14.4151 18.3941 14.4635 18.3166 14.495 18.2319C14.5265 18.1471 14.5404 18.0568 14.5358 17.9665L13.9958 6.47317C13.9958 6.29635 13.9256 6.12678 13.8006 6.00176C13.6755 5.87674 13.506 5.8065 13.3292 5.8065L2.5425 5.83317Z"/>
+			<path d="M11.9359 5.16667H10.6025V4C10.6025 3.29276 10.3216 2.61448 9.82147 2.11438C9.32137 1.61428 8.6431 1.33333 7.93585 1.33333C7.22861 1.33333 6.55033 1.61428 6.05023 2.11438C5.55014 2.61448 5.26919 3.29276 5.26919 4V5.16667H3.93585V4C3.93585 2.93913 4.35728 1.92172 5.10742 1.17157C5.85757 0.421427 6.87499 0 7.93585 0C8.99672 0 10.0141 0.421427 10.7643 1.17157C11.5144 1.92172 11.9359 2.93913 11.9359 4V5.16667Z"/>
+			</svg> 
+            Your Children
+			</a>
+            </li>
+        	<li class="has-sub-menu">
+            <a href="javascript:void(0);"> 
+            <svg viewBox="0 0 22 20">
+<path d="M20 3.85H15.8167L15.8167 2.66667L15.8167 2.66648C15.8154 1.6637 15.003 0.851242 14.0002 0.85H14L8 0.85L7.99981 0.85C6.99703 0.851242 6.18458 1.6637 6.18333 2.66648V2.66667V3.85H2C1.36491 3.85 0.85 4.36491 0.85 5L0.849998 12.4199L0.850002 12.4207C0.852252 12.8705 1.11475 13.2743 1.51667 13.4614V18C1.51667 18.6351 2.03158 19.15 2.66667 19.15H19.3333C19.9684 19.15 20.4833 18.6351 20.4833 18V13.4617C20.8852 13.2745 21.1479 12.8705 21.15 12.4206V12.4199V5C21.15 4.36491 20.6351 3.85 20 3.85ZM20.1833 12.4199V12.4201C20.1834 12.5114 20.1163 12.5888 20.026 12.6018C20.0259 12.6018 20.0258 12.6018 20.0257 12.6018L19.9339 12.6144L19.9338 12.6144L12.4833 13.6419V13.3333C12.4833 12.6982 11.9684 12.1833 11.3333 12.1833H10.6667C10.0316 12.1833 9.51667 12.6982 9.51667 13.3333V13.6419L1.97448 12.6018C1.97446 12.6018 1.97445 12.6018 1.97443 12.6018C1.88397 12.589 1.81658 12.5115 1.81667 12.4201V12.4199V5C1.81667 4.89876 1.89876 4.81667 2 4.81667H20C20.1012 4.81667 20.1833 4.89876 20.1833 5V12.4199ZM7.15 2.66667C7.15 2.19726 7.5306 1.81667 8 1.81667H14C14.4694 1.81667 14.85 2.19726 14.85 2.66667V3.85H14.4833V2.66667C14.4833 2.39974 14.2669 2.18333 14 2.18333H8C7.73308 2.18333 7.51667 2.39974 7.51667 2.66667V3.85H7.15V2.66667ZM13.5167 3.85H8.48333V3.15H13.5167V3.85ZM19.5167 18C19.5167 18.1012 19.4346 18.1833 19.3333 18.1833H2.66667C2.56543 18.1833 2.48333 18.1012 2.48333 18V13.6477L9.51667 14.6177V15.3333C9.51667 15.9684 10.0316 16.4833 10.6667 16.4833H11.3333C11.9684 16.4833 12.4833 15.9684 12.4833 15.3333V14.6177L19.5167 13.6477V18ZM11.5167 15.3333C11.5167 15.4346 11.4346 15.5167 11.3333 15.5167H10.6667C10.5654 15.5167 10.4833 15.4346 10.4833 15.3333V13.3333C10.4833 13.2321 10.5654 13.15 10.6667 13.15H11.3333C11.4346 13.15 11.5167 13.2321 11.5167 13.3333V15.3333Z"/>
+</svg> 
+			View attendace
+			</a>
+            <ul class="sub-menu">
+            	<li><a href="search-attendance.html">Current Month</a></li>
+            	<li><a href="search-attendance.html">Last Month</a></li> </ul>
+            </li>
+        	<li class="has-sub-menu">
+            <a href="javascript:void(0);"> 
+            <svg viewBox="0 0 18 18">
+<path d="M13.9143 5.07353C13.9143 2.27206 11.6423 0 8.8408 0C6.03933 0 3.76727 2.27206 3.76727 5.07353C3.76727 7.875 6.03933 10.1471 8.8408 10.1471C11.6423 10.1471 13.9143 7.875 13.9143 5.07353ZM5.0908 5.07353C5.0908 3 6.76727 1.32353 8.8408 1.32353C10.9143 1.32353 12.5908 3 12.5908 5.07353C12.5908 7.14706 10.9143 8.82353 8.8408 8.82353C6.76727 8.82353 5.0908 7.14706 5.0908 5.07353Z"/>
+<path d="M0.348192 17.9121C0.458486 17.9783 0.568781 18.0003 0.679075 18.0003C0.899663 18.0003 1.14231 17.8901 1.2526 17.6695C2.79672 14.9342 5.70849 13.2356 8.84084 13.2356C11.9732 13.2356 14.885 14.9342 16.4511 17.6695C16.6276 17.9783 17.0467 18.0886 17.3555 17.9121C17.6644 17.7356 17.7747 17.3165 17.5982 17.0077C15.8114 13.8753 12.4585 11.9121 8.84084 11.9121C5.22319 11.9121 1.87025 13.8753 0.0834863 17.0077C-0.0929843 17.3165 0.01731 17.7356 0.348192 17.9121Z"/>
+</svg>
+			View Results
+			</a>
+            <ul class="sub-menu">
+            	<li><a href="mark-attendance.html">Test Results</a></li>
+            	<li><a href="mark-attendance.html">Anual Results</a></li>
+            	<li><a href="mark-attendance.html">Previous Results</a></li>
+            </ul>
+            </li>
+        	<li>
+            <a href="view-student.html">
+            <svg viewBox="0 0 20 16">
+<path d="M15 0.142864C15.3948 0.142864 15.7143 0.462683 15.7143 0.857147L15.7143 13.5614L18.7807 10.495C19.0598 10.2159 19.5118 10.2159 19.7907 10.495C19.9302 10.6344 20 10.8173 20 11C20 11.1826 19.9302 11.3655 19.7907 11.505L15.505 15.7907C15.2259 16.0698 14.7739 16.0698 14.495 15.7907L10.2093 11.505C9.9302 11.2259 9.9302 10.7739 10.2093 10.495C10.4884 10.216 10.9404 10.2159 11.2193 10.495L14.2857 13.5614L14.2857 0.857147C14.2857 0.462683 14.6052 0.142864 15 0.142864ZM4.49503 0.352148L0.209329 4.63785C-0.0697771 4.91696 -0.0697771 5.36892 0.209329 5.64785C0.488436 5.92678 0.940399 5.92696 1.21933 5.64785L4.28575 2.58143L4.28575 15.2857C4.28575 15.6801 4.60521 16 5.00003 16C5.39485 16 5.71432 15.6801 5.71432 15.2857L5.71432 2.58143L8.78074 5.64785C9.05985 5.92696 9.51181 5.92696 9.79074 5.64785C9.9302 5.50839 10 5.32553 10 5.14285C10 4.96017 9.9302 4.77732 9.79074 4.63785L5.50503 0.352148C5.2261 0.0730417 4.77396 0.0730417 4.49503 0.352148Z"/>
+</svg>
+			Fees Status
+			</a>
+            </li>
+        	<li>
+            <a href="#">
+            <svg viewBox="270 120 60 60">
+<path d="M300,139.776c-5.646,0-10.224,4.578-10.224,10.224c0,5.647,4.578,10.224,10.224,10.224
+	c5.647,0,10.224-4.577,10.224-10.224C310.225,144.354,305.647,139.776,300,139.776z M300,160.191
+	c-5.62,0-10.191-4.571-10.191-10.191s4.572-10.191,10.191-10.191s10.191,4.572,10.191,10.191S305.62,160.191,300,160.191z
+	 M300,136.148c-7.638,0-13.853,6.214-13.853,13.853s6.214,13.853,13.853,13.853s13.853-6.215,13.853-13.853
+	S307.639,136.148,300,136.148z M300,160.258c-5.656,0-10.257-4.602-10.257-10.257s4.601-10.257,10.257-10.257
+	s10.257,4.601,10.257,10.257S305.656,160.258,300,160.258z M300,136.083c-7.675,0-13.918,6.243-13.918,13.918
+	c0,7.674,6.243,13.917,13.918,13.917c7.674,0,13.917-6.243,13.917-13.917C313.918,142.326,307.675,136.083,300,136.083z
+	 M300,163.886c-7.668,0-13.885-6.217-13.885-13.885c0-7.669,6.217-13.885,13.885-13.885s13.885,6.216,13.885,13.885
+	C313.886,157.669,307.669,163.886,300,163.886z M327.507,144.075l-2.821-0.706c-0.576-2.146-1.434-4.21-2.546-6.134l1.501-2.499
+	c0.305-0.409,0.467-0.896,0.467-1.406c0-0.511-0.162-0.997-0.47-1.41l-5.559-5.559c-0.317-0.317-0.739-0.492-1.188-0.492
+	c-0.014,0-0.028,0-0.041,0c-0.562,0.021-1.108,0.189-1.583,0.487l-2.515,1.503c-1.922-1.107-3.98-1.959-6.121-2.534l-0.706-2.836
+	c-0.423-1.322-1.096-1.992-2-1.992h-7.849c-1.368,0-1.877,1.526-2,1.994l-0.705,2.834c-2.141,0.574-4.2,1.427-6.121,2.533
+	l-2.514-1.502c-0.475-0.303-1.022-0.476-1.584-0.501c-0.465-0.01-0.903,0.165-1.229,0.492l-5.562,5.576
+	c-0.306,0.409-0.467,0.895-0.467,1.406c0,0.51,0.162,0.997,0.465,1.403l1.503,2.501c-1.114,1.924-1.97,3.987-2.546,6.134
+	l-2.821,0.706c-0.964,0.241-1.994,0.893-1.994,2v7.863c0,0.904,0.67,1.577,1.994,2l2.821,0.706c0.576,2.146,1.432,4.21,2.546,6.133
+	l-1.501,2.485c-0.311,0.4-0.481,0.899-0.481,1.406s0.17,1.006,0.484,1.409l5.559,5.56c0.307,0.308,0.717,0.478,1.152,0.478
+	c0.012,0,0.024,0,0.038,0c0.567-0.029,1.127-0.193,1.623-0.473l2.515-1.504c1.919,1.107,3.978,1.959,6.12,2.534l0.706,2.834
+	c0.241,0.964,0.893,1.993,2,1.993h7.863c0.904,0,1.577-0.67,2-1.993l0.706-2.834c2.142-0.575,4.2-1.427,6.119-2.534l2.517,1.505
+	c0.494,0.278,1.056,0.441,1.623,0.472c0.012,0,0.023,0,0.036,0l0,0c0.43,0,0.85-0.174,1.152-0.478l5.562-5.563
+	c0.311-0.4,0.481-0.899,0.481-1.405c0-0.508-0.171-1.007-0.479-1.403l-1.517-2.502c1.113-1.923,1.971-3.986,2.547-6.134l2.823-0.706
+	c1.321-0.423,1.991-1.096,1.991-2v-7.849C329.5,144.968,328.471,144.316,327.507,144.075z M326.756,153.283l-2.653,0.677
+	c-0.957,0.236-1.71,0.975-1.966,1.926c-0.519,1.925-1.289,3.774-2.287,5.496c-0.238,0.412-0.364,0.881-0.364,1.356
+	s0.126,0.944,0.364,1.355l1.46,2.43l-4.706,4.719l-2.43-1.447c-0.411-0.236-0.881-0.362-1.355-0.362
+	c-0.476,0-0.944,0.126-1.356,0.362c-1.719,0.994-3.563,1.759-5.482,2.274c-0.963,0.226-1.728,0.958-1.992,1.912l-0.691,2.775h-6.579
+	l-0.704-2.775c-0.236-0.956-0.975-1.709-1.925-1.966c-1.92-0.516-3.765-1.28-5.483-2.274c-0.412-0.237-0.881-0.362-1.356-0.362
+	c-0.476,0-0.944,0.125-1.356,0.363l-2.456,1.487l-4.679-4.639l1.461-2.444c0.237-0.41,0.363-0.879,0.363-1.354
+	s-0.125-0.944-0.363-1.355c-1.001-1.725-1.771-3.573-2.287-5.497c-0.243-0.955-0.986-1.703-1.939-1.952l-2.687-0.685h-0.061v-6.585
+	l2.748-0.704c0.956-0.236,1.709-0.975,1.966-1.925c0.517-1.925,1.287-3.774,2.288-5.497c0.238-0.412,0.363-0.88,0.363-1.355
+	s-0.125-0.944-0.363-1.357l-1.474-2.442l4.639-4.679l2.457,1.474c0.411,0.238,0.88,0.363,1.355,0.363s0.944-0.125,1.356-0.363
+	c1.72-0.995,3.564-1.76,5.483-2.274c0.955-0.243,1.703-0.986,1.953-1.939l0.704-2.774h6.566l0.704,2.774
+	c0.236,0.956,0.974,1.709,1.924,1.966c1.92,0.514,3.765,1.279,5.484,2.274c0.412,0.238,0.881,0.363,1.356,0.363
+	c0.475,0,0.943-0.125,1.355-0.364l2.457-1.474l4.678,4.612l-1.447,2.403c-0.237,0.412-0.363,0.88-0.363,1.356
+	c0,0.475,0.126,0.944,0.363,1.356c1,1.723,1.77,3.572,2.287,5.496c0.225,0.974,0.962,1.743,1.926,2.007l2.748,0.69V153.283z"/>
+</svg>
+			Setting
+			</a>
+            </li>
+        </ul>
+    </div>
+    <a href="login.html" class="logoutLink">
+    <svg viewBox="0 0 512 512"><path d="M48 64h132c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H48c-8.8 0-16 7.2-16 16v288c0 8.8 7.2 16 16 16h132c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48zm279 19.5l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l132 131.4H172c-6.6 0-12 5.4-12 12v10c0 6.6 5.4 12 12 12h279.9L320 404.4c-4.7 4.7-4.7 12.3 0 17l7.1 7.1c4.7 4.7 12.3 4.7 17 0l164.5-164c4.7-4.7 4.7-12.3 0-17L344 83.5c-4.7-4.7-12.3-4.7-17 0z"></path></svg>
+    Logout
+    </a>
+    </div>
+ 	<div class="page_content">
+    	<div class="page_section">
+    	<h4 class="section_title">Attendance</h4>
+        <div class="search_form attend_search">
+        	<div class="row">
+            	<div class="col-md-6">
+                	<div class="form-row">
+                	<select class="form-select rounded-pill">
+                    	<option selected>Select Child</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                    </div>
+                </div>
+            	<div class="col-md-6">
+                	<div class="form-row">
+                	<select class="form-select date-select rounded-pill">
+                        <option selected>Select Month</option>
+                        <option selected>January</option>
+                        <option selected>February</option>
+                        <option selected>March</option>
+                        <option selected>April</option>
+                        <option selected>May</option>
+                        <option selected>June</option>
+                        <option selected>July</option>
+                        <option selected>August</option>
+                        <option selected>September</option>
+                        <option selected>October</option>
+                        <option selected>November</option>
+                        <option selected>December</option> 
+                    </select>
+                    </div>
+                </div>
+            	<div class="col-md-6"> 
+                	<div class="form-row">
+                		<select class="form-select date-select rounded-pill">
+                            <option selected>Select Year</option>
+                            <option selected>2020</option>
+                            <option selected>2019</option>
+                        </select>
+                    </div>
+                </div>
+            	<div class="col-md-6">
+                	<div class="form-row text-end">
+                	<button type="button" class="btn btn-primary btn-red rounded-pill">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="page_section">
+        	<div class="results_section attend_results">
+            	<div class="results_header">
+                	<div class="row">
+                    	<div class="col-md-5">
+                        	<p>Student name: <strong>Calven Henry</strong></p>
+                        </div>
+                    	<div class="col-md-7 resultsOf d-flex align-items-center justify-content-between">
+                        <p>Attendance sheet of class: 5th, section: C <strong>April 2021</strong></p>
+                        <a href="#" class="text-red text-decoration-none">Print Sheet</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="table_wrap">
+                	<table class="table table-striped">
+                    	<thead>
+                        <tr>
+                        	<th>Dates</th>
+                        	<th class="name-td">Subject Name</th>
+                        	<th class="name-td">Teacher Name</th>
+                        	<th>Present</th>
+                        	<th>Absent</th>
+                        	<th>Leaves</th>
+                        	<th>T.Percentage</th>
+                        	<th>Fine</th> 
+                        </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td>1</td>
+                            	<td>English</td>
+                            	<td>John Mical</td>
+                            	<td class="text-green">24</td>
+                            	<td class="text-red">1</td>
+                            	<td class="text-yellow">1</td>
+                            	<td>92</td>
+                            	<td>0</td>
+                            </tr>
+                            <tr>
+                            	<td>1</td>
+                            	<td>English</td>
+                            	<td>John Mical</td>
+                            	<td class="text-green">24</td>
+                            	<td class="text-red">1</td>
+                            	<td class="text-yellow">1</td>
+                            	<td>92</td>
+                            	<td>0</td>
+                            </tr>
+                            <tr>
+                            	<td>1</td>
+                            	<td>English</td>
+                            	<td>John Mical</td>
+                            	<td class="text-green">24</td>
+                            	<td class="text-red">1</td>
+                            	<td class="text-yellow">1</td>
+                            	<td>92</td>
+                            	<td>0</td>
+                            </tr>
+                        	<tr>
+                            	<td>1</td>
+                            	<td>English</td>
+                            	<td>John Mical</td>
+                            	<td class="text-green">24</td>
+                            	<td class="text-red">1</td>
+                            	<td class="text-yellow">1</td>
+                            	<td>92</td>
+                            	<td>0</td>
+                            </tr>
+                            <tr>
+                            	<td>1</td>
+                            	<td>English</td>
+                            	<td>John Mical</td>
+                            	<td class="text-green">24</td>
+                            	<td class="text-red">1</td>
+                            	<td class="text-yellow">1</td>
+                            	<td>92</td>
+                            	<td class="text-red">1200</td>
+                            </tr>
+                            <tr>
+                            	<td>1</td>
+                            	<td>English</td>
+                            	<td>John Mical</td>
+                            	<td class="text-green">24</td>
+                            	<td class="text-red">1</td>
+                            	<td class="text-yellow">1</td>
+                            	<td>92</td>
+                            	<td>0</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                        	<tr>
+                            <th colspan="8"></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" ></script>
+<script src="js/custom.js" ></script>
+</body>
+</html>
